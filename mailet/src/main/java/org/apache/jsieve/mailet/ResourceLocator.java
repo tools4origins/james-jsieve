@@ -60,7 +60,7 @@ public interface ResourceLocator {
      * GET verb locates and loads a resource. 
      * @param uri identifies the Sieve script 
      * @return not null
-     * @throws IOException when the resource cannot be located
+     * @throws Exception when the resource cannot be located
      */
-    public InputStream get(String uri) throws IOException;
+    InputStream get(String uri) throws Exception;
 }
